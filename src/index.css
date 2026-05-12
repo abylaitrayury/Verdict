@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Inter", serif; /* Defaulting to sans for minimalism */
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-[#f8f7f4] text-[#1a1a1a] antialiased overflow-x-hidden font-sans;
+  }
+}
+
+@layer components {
+  .minimal-card {
+    @apply bg-white border border-[#e5e4e1] shadow-sm;
+  }
+}
